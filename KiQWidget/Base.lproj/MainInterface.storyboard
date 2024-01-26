@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="KiQWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKm-Pi-dVv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popParrentAppButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="mZz-ES-R1I"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White Cat" translatesAutoresizingMaskIntoConstraints="NO" id="mU1-kf-qNh">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="GXv-or-Hb2"/>
+                                    <constraint firstAttribute="width" constant="79" id="z5q-hV-BvI"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-iy-OgR">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVu-pb-Jy9">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iVu-pb-Jy9" secondAttribute="height" multiplier="1:1" id="Ak7-SJ-gaN"/>
+                                            <constraint firstAttribute="height" constant="50" id="PrV-Wy-NQR"/>
+                                        </constraints>
+                                        <state key="normal" image="CirecledTwitter"/>
+                                        <connections>
+                                            <action selector="twitterButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="alM-GE-pRe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPT-Lv-VKU">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tPT-Lv-VKU" secondAttribute="height" multiplier="1:1" id="2vb-iw-Bhm"/>
+                                            <constraint firstAttribute="height" constant="50" id="Hdi-Ld-PVW"/>
+                                        </constraints>
+                                        <state key="normal" image="CircledPlay"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="HXb-Xc-zno"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbL-9H-459">
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-RD-r39">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="1Vk-I3-zPW"/>
+                                            <constraint firstAttribute="width" constant="20" id="JxS-dF-NKs"/>
+                                        </constraints>
+                                        <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWH-cZ-uit">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TWH-cZ-uit" secondAttribute="height" multiplier="1:1" id="je9-cA-7ZJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="rQt-b7-RcL"/>
+                                        </constraints>
+                                        <state key="normal" image="CircledFB"/>
+                                        <connections>
+                                            <action selector="fbButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="tMx-QS-gMd"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Battery" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-WY-wtz">
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="w83-58-GJm"/>
+                                            <constraint firstAttribute="width" secondItem="J4w-WY-wtz" secondAttribute="height" multiplier="180:79" id="yFl-Zj-nFI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flash" translatesAutoresizingMaskIntoConstraints="NO" id="xuf-mg-KxA">
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="FaW-cJ-sbY"/>
+                                            <constraint firstAttribute="height" constant="12" id="VPA-Do-RPs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xuf-mg-KxA" firstAttribute="leading" secondItem="J4w-WY-wtz" secondAttribute="trailing" constant="2" id="11i-qK-9Kr"/>
+                                    <constraint firstItem="tPT-Lv-VKU" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="3aR-yd-eZL"/>
+                                    <constraint firstItem="TWH-cZ-uit" firstAttribute="centerX" secondItem="fGQ-iy-OgR" secondAttribute="centerX" constant="-30" id="3kd-e1-EEN"/>
+                                    <constraint firstItem="VXa-RD-r39" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="4qf-up-KDJ"/>
+                                    <constraint firstItem="VXa-RD-r39" firstAttribute="centerX" secondItem="fGQ-iy-OgR" secondAttribute="centerX" constant="-30" id="7R8-im-swl"/>
+                                    <constraint firstItem="tPT-Lv-VKU" firstAttribute="centerX" secondItem="fGQ-iy-OgR" secondAttribute="centerX" constant="35" id="KUA-mv-h6r"/>
+                                    <constraint firstItem="bbL-9H-459" firstAttribute="centerX" secondItem="fGQ-iy-OgR" secondAttribute="centerX" id="TPc-eX-v9g"/>
+                                    <constraint firstItem="xuf-mg-KxA" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="Tue-aM-s0v"/>
+                                    <constraint firstAttribute="trailing" secondItem="J4w-WY-wtz" secondAttribute="trailing" constant="14" id="ali-S1-pr7"/>
+                                    <constraint firstItem="bbL-9H-459" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="bH8-iW-8H6"/>
+                                    <constraint firstItem="J4w-WY-wtz" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="eUb-lb-poI"/>
+                                    <constraint firstItem="iVu-pb-Jy9" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="eV7-iH-O0t"/>
+                                    <constraint firstItem="TWH-cZ-uit" firstAttribute="centerY" secondItem="fGQ-iy-OgR" secondAttribute="centerY" id="gUY-8k-a7D"/>
+                                    <constraint firstItem="iVu-pb-Jy9" firstAttribute="centerX" secondItem="fGQ-iy-OgR" secondAttribute="centerX" constant="-95" id="k1T-jU-Qs8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mU1-kf-qNh" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="5cf-ic-UHc"/>
+                            <constraint firstItem="fGQ-iy-OgR" firstAttribute="leading" secondItem="mU1-kf-qNh" secondAttribute="trailing" constant="5" id="5qJ-h1-Bed"/>
+                            <constraint firstItem="qKm-Pi-dVv" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" priority="750" constant="2" id="JMd-11-RYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="qKm-Pi-dVv" secondAttribute="trailing" priority="750" constant="100" id="LHL-Fk-kzN"/>
+                            <constraint firstItem="qKm-Pi-dVv" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="2" id="P7c-iR-rgf"/>
+                            <constraint firstAttribute="bottom" secondItem="qKm-Pi-dVv" secondAttribute="bottom" constant="2" id="dio-J0-LcN"/>
+                            <constraint firstItem="fGQ-iy-OgR" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="f6S-t1-aq0"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="fGQ-iy-OgR" secondAttribute="bottom" id="gwS-aF-eur"/>
+                            <constraint firstItem="mU1-kf-qNh" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="jr3-j5-ZtH"/>
+                            <constraint firstAttribute="trailing" secondItem="fGQ-iy-OgR" secondAttribute="trailing" priority="750" constant="5" id="pWL-2t-G9z"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="100"/>
+                    <connections>
+                        <outlet property="aiXposConstraint" destination="7R8-im-swl" id="yod-Si-I9e"/>
+                        <outlet property="batteriPicWidth" destination="w83-58-GJm" id="goQ-6n-WQk"/>
+                        <outlet property="batteryPicAspect" destination="yFl-Zj-nFI" id="N1S-SK-muK"/>
+                        <outlet property="batteryPicture" destination="J4w-WY-wtz" id="Cy4-vu-z5b"/>
+                        <outlet property="fbButton" destination="TWH-cZ-uit" id="nXG-RM-Zef"/>
+                        <outlet property="fbButtonHeigh" destination="rQt-b7-RcL" id="eQU-SE-GiM"/>
+                        <outlet property="fbXposConstraint" destination="3kd-e1-EEN" id="oXl-05-6UW"/>
+                        <outlet property="flashPicture" destination="xuf-mg-KxA" id="ccR-gs-uL7"/>
+                        <outlet property="playActivityIndicator" destination="VXa-RD-r39" id="DMj-Xl-Rez"/>
+                        <outlet property="playButton" destination="tPT-Lv-VKU" id="yi8-b8-Yk9"/>
+                        <outlet property="playButtonHeigh" destination="Hdi-Ld-PVW" id="6ww-V9-v8l"/>
+                        <outlet property="playXposConstraint" destination="KUA-mv-h6r" id="ytW-D4-Gg1"/>
+                        <outlet property="popParrentAppButton" destination="qKm-Pi-dVv" id="Txl-Y2-16x"/>
+                        <outlet property="toyStatusLabel" destination="bbL-9H-459" id="4Sr-fW-4Ik"/>
+                        <outlet property="twitterButton" destination="iVu-pb-Jy9" id="FWd-oH-HWB"/>
+                        <outlet property="twitterButtonHeigh" destination="PrV-Wy-NQR" id="0xv-r7-5F9"/>
+                        <outlet property="twitterXposConstraint" destination="k1T-jU-Qs8" id="kIZ-Zf-eGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="138.53073463268368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Battery" width="100" height="48"/>
+        <image name="CircledFB" width="60" height="60"/>
+        <image name="CircledPlay" width="60" height="60"/>
+        <image name="CirecledTwitter" width="60" height="60"/>
+        <image name="Flash" width="40" height="40"/>
+        <image name="White Cat" width="84" height="70"/>
+    </resources>
+</document>

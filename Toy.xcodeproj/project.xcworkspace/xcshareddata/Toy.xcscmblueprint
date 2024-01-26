@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2d3cc6c0-19d2-4782-b858-d8ac817d44e5++1331",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2d3cc6c0-19d2-4782-b858-d8ac817d44e5++1331" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2d3cc6c0-19d2-4782-b858-d8ac817d44e5++1331" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "252452A2-CD96-4A98-8170-243496379A83",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2d3cc6c0-19d2-4782-b858-d8ac817d44e5++1331" : "KiQToy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Toy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "branches\/KiQLight\/Toy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.signetwx.com\/ptx\/app",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2d3cc6c0-19d2-4782-b858-d8ac817d44e5++1331"
+    }
+  ]
+}
